@@ -1,0 +1,138 @@
+@charset "UFT-8";
+@import "mixin", "variables", "fonts", "reset", "main", "contents";
+
+// comm.scss -
+// 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
+
+// 공통
+.container {
+  padding: 0 4%;
+}
+
+// header
+#header {
+  border-bottom: 1px solid #000;
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+  }
+  .head__right {
+    display: flex;
+  }
+  .lst-util {
+    display: flex;
+    li {
+      display: flex;
+    }
+    .btn-g,
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 70px;
+      .material-icons-outlined {
+        font-size: 26px;
+      }
+      &::before {
+        font-size: 20px;
+        font-family: "Font Awesome 6 Free";
+      }
+    }
+    // .btn-search::before {
+    //   content: "\f002";
+    //   font-weight: 900;
+    // }
+    // .btn-my::before {
+    //   content: "\f007";
+    //   font-weight: 400;
+    // }
+  }
+}
+
+.gnb-wrap {
+  .input-burger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  .label-burger {
+    .bar {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background: red;
+    }
+  }
+  #gnb {
+    display: none;
+  }
+}
+
+section:not(#sectionPin) {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  padding: 50px 10vw;
+  margin: auto;
+  place-items: center;
+}
+
+img {
+  width: 300px;
+  height: 320px;
+  object-fit: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+.pin-cont {
+  background: #1d2c50;
+  // transition: 0.3s ease-out;
+  // overflow-x: hidden;
+  // max-width: 100%;
+  // width: 100%;
+  // overscroll-behavior: none;
+}
+#sectionPin {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  left: 0;
+}
+
+.pin-wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 10vw;
+
+  & > * {
+    padding: 0 5vw;
+  }
+}
+.slide-box {
+  display: flex;
+  padding: 0;
+  margin: 50px;
+  background: #fff;
+}
+.slide-box img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.slide-box .txt {
+  width: 300px;
+  padding: 20px;
+}
