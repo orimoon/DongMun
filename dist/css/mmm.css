@@ -1,29 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Poppins";
-  font-weight: 300;
-  src: url(../font/Poppins-Light.woff) format("woff");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 400;
-  src: url(../fonts/Poppins-Regular.woff) format("woff");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 500;
-  src: url(../fonts/Poppins-Medium.woff) format("woff");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 600;
-  src: url(../fonts/Poppins-SemiBold.woff) format("woff");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 700;
-  src: url(../fonts/Poppins-Bold.woff) format("woff");
-}
 /* reset */
 body,
 div,
@@ -280,150 +255,12 @@ legend {
   content: "";
 }
 
-.slide-wrap {
-  height: 600px;
-  background: #000;
-  overflow: hidden;
-}
-
-.contents {
-  height: 3000px;
-}
-
-#header {
-  border-bottom: 1px solid #000;
-}
-#header .inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 70px;
-}
-#header .head__right {
-  display: flex;
-}
-#header .lst-util {
-  display: flex;
-}
-#header .lst-util li {
-  display: flex;
-}
-#header .lst-util .btn-g,
-#header .lst-util a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 70px;
-}
-#header .lst-util .btn-g .material-icons-outlined,
-#header .lst-util a .material-icons-outlined {
-  font-size: 26px;
-}
-#header .lst-util .btn-g::before,
-#header .lst-util a::before {
-  font-size: 20px;
-  font-family: "Font Awesome 6 Free";
-}
-
-.gnb-wrap .input-burger {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  opacity: 0;
-}
-.gnb-wrap .label-burger .bar {
-  display: block;
-  width: 26px;
-  height: 2px;
-  background: red;
-}
-.gnb-wrap #gnb {
-  display: none;
-}
-
-.slide-wrap {
-  height: 600px;
-  background: #000;
-  overflow: hidden;
-}
-
-section:not(#sectionPin) {
-  min-height: 100vh;
-  width: 100%;
-  position: relative;
-  display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 2rem;
-  padding: 50px 10vw;
-  margin: auto;
-  place-items: center;
-}
-section:not(#sectionPin) span {
-  display: block;
-}
-
-.brand {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-img {
-  width: 300px;
-  height: 320px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.slide-intro .splide {
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-}
-.slide-intro .splide::before, .slide-intro .splide::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  z-index: 1;
-  width: 300%;
-  height: 100%;
-  background-color: red;
-  opacity: 0.5;
-}
-.slide-intro .splide::before {
-  right: 100%;
-}
-.slide-intro .splide::after {
-  left: 100%;
-}
-.slide-intro .splide__track {
-  overflow: visible;
-}
-.slide-intro .splide__slide img {
-  width: 100%;
-  height: auto;
-}
-
-.pin-cont {
-  background: #1d2c50;
-}
-
-.sub-container {
-  margin: 0 !important;
-  padding: 0 !important;
-}
 .sub-container .brand {
   color: #ffffff;
   height: 100vh;
   height: calc(100vh - 79px);
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-left: 0;
+  padding-right: 0;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -600,45 +437,4 @@ img {
   width: 42px;
   height: 1px;
   background-color: #ffffff;
-}
-
-.img-box {
-  margin: 0 auto;
-}
-.img-box .four-active {
-  display: flex;
-  justify-content: space-between;
-}
-.img-box .four-active li {
-  width: 23%;
-  height: 50vh;
-}
-.img-box .four-active li a {
-  position: relative;
-  display: block;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.img-box .four-active li a img {
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-.img-box .four-active li a:hover {
-  border-radius: 10px;
-}
-.img-box .four-active li a:hover img {
-  transform: scale(1.1);
-}
-.img-box .four-active li a span {
-  display: block;
-  width: 100%;
-  position: absolute;
-  bottom: 25px;
-  font-size: 20px;
-}/*# sourceMappingURL=comm.css.map */
+}/*# sourceMappingURL=mmm.css.map */
