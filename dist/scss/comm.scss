@@ -1,5 +1,5 @@
 @charset "UFT-8";
-@import "mixin", "variables", "fonts", "reset", "main", "contents";
+@import "mixin", "variables", "fonts", "reset", "main", "news", "contents";
 
 // comm.scss -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
@@ -11,72 +11,31 @@
 
 // header
 #header {
-  border-bottom: 1px solid #000;
-  .inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-  }
-  .head__right {
-    display: flex;
-  }
-  .lst-util {
-    display: flex;
-    li {
-      display: flex;
-    }
-    .btn-g,
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40px;
-      height: 70px;
-      .material-icons-outlined {
-        font-size: 26px;
-      }
-      &::before {
-        font-size: 20px;
-        font-family: "Font Awesome 6 Free";
-      }
-    }
-    // .btn-search::before {
-    //   content: "\f002";
-    //   font-weight: 900;
-    // }
-    // .btn-my::before {
-    //   content: "\f007";
-    //   font-weight: 400;
-    // }
+  height: 133px;
+  background: #fff;
+}
+.inner {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+// video
+.main-video {
+  height: 800px;
+  overflow: hidden;
+  video {
+    width: 100%;
   }
 }
 
-.gnb-wrap {
-  .input-burger {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    opacity: 0;
-  }
-  .label-burger {
-    .bar {
-      display: block;
-      width: 26px;
-      height: 2px;
-      background: red;
-    }
-  }
-  #gnb {
-    display: none;
-  }
+// splide slide
+.splide__track {
+  overflow: visible;
 }
-.slide-wrap {
-  height: 600px;
-  background: #000;
-  overflow: hidden;
+.splide__slide img {
+  width: 100%;
+  height: auto;
 }
 
 section:not(#sectionPin) {

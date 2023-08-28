@@ -1,0 +1,132 @@
+/* newsroom_list */
+.news-wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.newsroom_list {
+  font-size: 0;
+}
+.newsroom_list li {
+  display: inline-block;
+  width: 380px;
+  margin: 80px 20px 0 0px;
+  // vertical-align: top;
+}
+.newsroom_list li:nth-child(1),
+.newsroom_list li:nth-child(2),
+.newsroom_list li:nth-child(3) {
+  margin-top: 0;
+}
+.newsroom_list li:nth-child(3n + 1) {
+  margin-left: 0;
+}
+.newsroom_list .newsroom_link {
+  display: block;
+}
+.newsroom_list .img_box {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 66.0212%;
+  margin-bottom: 20px;
+  background-color: #000;
+}
+.newsroom_list .img_box .img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 101%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.newsroom_list .img_box .img img {
+  display: block;
+  width: 100%;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.newsroom_list li:hover .img_box .img img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+.newsroom_list .txt_box .tit {
+  overflow: hidden;
+  height: 60px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #1c1c1c;
+  line-height: 30px;
+}
+.newsroom_list .newsroom_link:hover .txt_box .tit {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.newsroom_list .txt_box .date {
+  font-size: 14px;
+  color: #999;
+}
+
+.social_tit_wrap {
+  position: relative;
+}
+.social_tit_wrap .social_link_btn {
+  position: absolute;
+  top: -15px;
+  right: 0;
+  display: block;
+  padding: 0 20px;
+  height: 50px;
+  border: 1px solid #ddd;
+  color: #1c1c1c;
+  line-height: 50px;
+}
+.social_tit_wrap .social_link_btn::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  margin-right: 5px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+.social_tit_wrap .youtube::before {
+  width: 22px;
+  height: 16px;
+  background-image: url(/resource/images/sub/pr/social_yotube_icon.png);
+}
+.social_tit_wrap .insta::before {
+  width: 20px;
+  height: 20px;
+  background-image: url(/resource/images/sub/pr/social_insta_icon.png);
+}
+.social_tit_wrap .blog::before {
+  width: 11px;
+  height: 14px;
+  background-image: url(/resource/images/sub/pr/social_blog_icon.png);
+}
+.social_tit_wrap .post::before {
+  width: 12px;
+  height: 16px;
+  background-image: url(/resource/images/sub/pr/social_post_icon.png);
+  top: -1px;
+}
+.social_more_btn {
+  display: block;
+  position: relative;
+  padding-top: 30px;
+  margin-top: 75px;
+  border-top: 1px solid #ddd;
+  font-weight: 700;
+  font-size: 20px;
+  color: #1c1c1c;
+  text-align: center;
+}
+.social_more_btn::after {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin-left: 15px;
+  background: url(/resource/images/sub/pr/social_more_icon.png) 0 0 no-repeat;
+  vertical-align: middle;
+}

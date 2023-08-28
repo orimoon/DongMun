@@ -46,15 +46,10 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
     />
     <link rel="stylesheet" href="./dist/css/comm.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script defer src="./dist/js/comm.js"></script>
   </head>
@@ -64,95 +59,138 @@
       <a href="#main"><span>컨텐츠 바로가기</span></a>
     </div>
     <div class="wrap">
-      <!-- logo 왼쪽 type -->
-      <!-- <header id="header" class="container">
+      <header id="header">
+        <div class="inner">header</div>
+      </header>
+
+      <!-- </section> -->
+      <div class="main-video">
         <div class="inner">
-          <h1 id="logo">
-            <a href="#">logo</a>
-          </h1>
-          <div class="head__right">
-            <div class="util">
-              <ul class="lst-util">
-                <li> -->
-      <!-- a : 링크 연결 / button : 동작처리
-                  
-                  <a href="javascript:void(0)">
-                    <span class="material-icons-outlined"> language </span>
-                  </a>
+          <video autoplay muted loop>
+            <source
+              src="./images/video/pexels_videos_2108274 (1080p).mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+      <main id="main" class="container">
+        <div class="inner">
+          <section
+            id="main-slider"
+            class="splide"
+            aria-label="Beautiful Images"
+          >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img
+                    src="https://images.unsplash.com/photo-1682685797769-481b48222adf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                    alt=""
+                  />
                 </li>
-                <li>
-                  <button class="btn-g btn-search">
-                    <span class="material-icons-outlined"> search </span>
-                    <span class="blind">검색</span>
-                  </button>
+                <li class="splide__slide">
+                  <img
+                    src="https://images.unsplash.com/photo-1682685797208-c741d58c2eff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                    alt=""
+                  />
                 </li>
-                <li>
-                  <a href="#" class="btn-g btn-my">
-                    <span class="material-icons-outlined">
-                      account_circle
-                    </span>
-                    <span class="blind">마이페이지</span>
-                  </a>
+                <li class="splide__slide">
+                  <img
+                    src="https://images.unsplash.com/photo-1682695794816-7b9da18ed470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                    alt=""
+                  />
                 </li>
               </ul>
             </div>
-            <nav class="gnb-wrap">
-              <input
-                type="checkbox"
-                name="gnbNav"
-                id="gnbNav"
-                class="input-burger"
-              />
-              <label for="gnbNav" class="label-burger">
-                <span class="blind">전체 메뉴 보기</span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-              </label>
-              <div id="gnb">navi</div>
-            </nav>
-          </div>
-        </div>
-      </header> -->
-      <!-- <section> -->
-
-      <!-- </section> -->
-      <main id="main" class="container">
-        <div class="pin-cont">
-          <div class="slide-wrap slide-name">
-            <div class="main-video">
-              <video width="1920" autoplay muted loop>
-                <source
-                  src="./images/video/pexels_videos_2108274 (1080p).mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-          </div>
-          <section class="sec-slide">
-            <div class="slide-intro">
-              <section
-                id="image-carousel"
-                class="splide"
-                aria-label="Beautiful Images"
-              >
-                <div class="splide__track">
-                  <ul class="splide__list">
-                    <li class="splide__slide">
-                      <img src="./images/comm/box_btn_img2.png" alt="" />
-                    </li>
-                    <li class="splide__slide">
-                      <img src="./images/comm/box_btn_img4.png" alt="" />
-                    </li>
-                    <li class="splide__slide">
-                      <img src="./images/comm/box_btn_img3.png" alt="" />
-                    </li>
-                  </ul>
-                </div>
-              </section>
+          </section>
+          <section
+            id="thumbnail-slider"
+            class="splide"
+            aria-label="Beautiful Images"
+          >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img
+                    src="https://images.unsplash.com/photo-1682685797769-481b48222adf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                    alt=""
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="https://images.unsplash.com/photo-1682685797208-c741d58c2eff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                    alt=""
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="https://images.unsplash.com/photo-1682695794816-7b9da18ed470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                    alt=""
+                  />
+                </li>
+              </ul>
             </div>
           </section>
-          <!-- <section id="sectionPin">
+          <script>
+            var main = new Splide("#main-slider", {
+              type: "fade",
+              heightRatio: 0.5,
+              pagination: false,
+              arrows: false,
+              cover: true,
+            });
+
+            var thumbnails = new Splide("#thumbnail-slider", {
+              rewind: true,
+              fixedWidth: 104,
+              fixedHeight: 58,
+              isNavigation: true,
+              gap: 10,
+              focus: "center",
+              pagination: false,
+              cover: true,
+              dragMinThreshold: {
+                mouse: 4,
+                touch: 10,
+              },
+              breakpoints: {
+                640: {
+                  fixedWidth: 66,
+                  fixedHeight: 38,
+                },
+              },
+            });
+
+            main.sync(thumbnails);
+            main.mount();
+            thumbnails.mount();
+          </script>
+        </div>
+        <section class="sec-slide">
+          <div class="slide-intro">
+            <section
+              id="image-carousel"
+              class="splide"
+              aria-label="Beautiful Images"
+            >
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="./images/comm/box_btn_img2.png" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./images/comm/box_btn_img4.png" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./images/comm/box_btn_img3.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </section>
+        <!-- <section id="sectionPin">
             <span
               >Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </span>
@@ -255,112 +293,111 @@
               </div>
             </div>
           </section> -->
-          <section class="sub-container">
-            <section class="brand">
-              <div class="left">
-                <div class="desc">
-                  <h2>ENHANCE YOUR LIFE</h2>
-                  <!-- <h3>엘리프는 개성과 취향을 추구하는 주거공간,<br>그 이상의 라이프 스타일을 추구합니다</h3> -->
-                  <h3>
-                    계룡건설의 브랜드 ELIF는 LIFE의 스펠링을 변형하여 <br />
-                    삶을 다르게 보고 일상을 새롭게 만들어 가는 주거 공간을
-                    표현했습니다.<br />
-                    <br />
-                    ELIF는 개성과 취향을 추구하는 주거 공간, <br />
-                    그 이상의 라이프 스타일을 추구합니다.
-                  </h3>
-                </div>
+        <section class="sub-container">
+          <section class="brand">
+            <div class="left">
+              <div class="desc">
+                <h2>ENHANCE YOUR LIFE</h2>
+                <!-- <h3>엘리프는 개성과 취향을 추구하는 주거공간,<br>그 이상의 라이프 스타일을 추구합니다</h3> -->
+                <h3>
+                  계룡건설의 브랜드 ELIF는 LIFE의 스펠링을 변형하여 <br />
+                  삶을 다르게 보고 일상을 새롭게 만들어 가는 주거 공간을
+                  표현했습니다.<br />
+                  <br />
+                  ELIF는 개성과 취향을 추구하는 주거 공간, <br />
+                  그 이상의 라이프 스타일을 추구합니다.
+                </h3>
               </div>
-              <div class="right">
-                <ul>
-                  <li>
-                    <div>
-                      <a href="#">
-                        <div class="area-txt">
-                          <span>브랜드 스토리</span>
-                          <span
-                            >당신의 일상에 새로움을 더하는<br />주거 공간의
-                            특별한 기준을 만들어갑니다.</span
-                          >
-                        </div>
-                        <div class="area-bg">
-                          <img
-                            src="./images/comm/brand_img0.png"
-                            alt="브랜드 스토리 바로가기 배경 이미지"
-                          />
-                        </div>
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <a href="#">
-                        <div class="area-txt">
-                          <span>브랜드 아이덴티티</span>
-                          <span
-                            >새로운 일상에 대한 자신감을 보여주며<br />품질에
-                            대한 엘리프의 정직한 고집을 표현합니다.</span
-                          >
-                        </div>
-                        <div class="area-bg">
-                          <img
-                            src="./images/comm/brand_img1.png"
-                            alt="브랜드 아이덴티티 바로가기 배경 이미지"
-                          />
-                        </div>
-                      </a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="bg">
-                <div>
-                  <video width="1920" autoplay muted loop>
-                    <source
-                      src="./images/video/video (1080p).mp4"
-                      type="video/mp4"
-                    />
-                  </video>
-                  <!-- <img src="/resources/web/images/main-bg-cover.png" alt=""> -->
-                </div>
-              </div>
-            </section>
-          </section>
-          <section class="four-sec">
-            <div class="img-box">
-              <ul class="four-active">
+            </div>
+            <div class="right">
+              <ul>
                 <li>
-                  <a href="#"
-                    ><img src="./images/comm/m_sub_visual02.png" alt="" /><span
-                      >A/S 신청</span
-                    ></a
-                  >
+                  <div>
+                    <a href="#">
+                      <div class="area-txt">
+                        <span>브랜드 스토리</span>
+                        <span
+                          >당신의 일상에 새로움을 더하는<br />주거 공간의 특별한
+                          기준을 만들어갑니다.</span
+                        >
+                      </div>
+                      <div class="area-bg">
+                        <img
+                          src="./images/comm/brand_img0.png"
+                          alt="브랜드 스토리 바로가기 배경 이미지"
+                        />
+                      </div>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="#"
-                    ><img src="./images/comm/m_sub_visual02.png" alt="" /><span
-                      >A/S 신청</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><img src="./images/comm/brand_img3.png" alt="" /><span
-                      >A/S 신청</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><img src="./images/comm/m_sub_visual02.png" alt="" /><span
-                      >A/S 신청</span
-                    ></a
-                  >
+                  <div>
+                    <a href="#">
+                      <div class="area-txt">
+                        <span>브랜드 아이덴티티</span>
+                        <span
+                          >새로운 일상에 대한 자신감을 보여주며<br />품질에 대한
+                          엘리프의 정직한 고집을 표현합니다.</span
+                        >
+                      </div>
+                      <div class="area-bg">
+                        <img
+                          src="./images/comm/brand_img1.png"
+                          alt="브랜드 아이덴티티 바로가기 배경 이미지"
+                        />
+                      </div>
+                    </a>
+                  </div>
                 </li>
               </ul>
             </div>
+            <div class="bg">
+              <div>
+                <video width="1920" autoplay muted loop>
+                  <source
+                    src="./images/video/video (1080p).mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <!-- <img src="/resources/web/images/main-bg-cover.png" alt=""> -->
+              </div>
+            </div>
           </section>
-        </div>
+        </section>
+        <section class="four-sec">
+          <div class="img-box">
+            <ul class="four-active">
+              <li>
+                <a href="#"
+                  ><img src="./images/comm/m_sub_visual02.png" alt="" /><span
+                    >A/S 신청</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./images/comm/m_sub_visual02.png" alt="" /><span
+                    >A/S 신청</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./images/comm/brand_img3.png" alt="" /><span
+                    >A/S 신청</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./images/comm/m_sub_visual02.png" alt="" /><span
+                    >A/S 신청</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
       </main>
       <!-- <footer id="footer" class="container">풋터</footer> -->
     </div>
