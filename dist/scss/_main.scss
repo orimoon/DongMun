@@ -1,5 +1,64 @@
-.slide-wrap {
-  height: 600px;
-  background: #000;
-  overflow: hidden;
+.slick-slider {
+  .slick-arrow {
+    z-index: 10;
+    width: 84px;
+    height: 84px;
+    background: #fff;
+    border-radius: 50%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    &::before {
+      display: none;
+    }
+  }
+  .slick-prev {
+    left: -120px;
+    background-image: url(../../images/comm/ico-sld-prev.png);
+  }
+  .slick-next {
+    right: -120px;
+    background-image: url(../../images/comm/ico-sld-next.png);
+  }
+  .slick-dots {
+    bottom: -5px;
+  }
+}
+
+.sec-calendar {
+  $calendarHeight: 500px;
+
+  display: flex;
+  height: $calendarHeight;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+  .nav-wrap {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 60%;
+    background: #054437;
+  }
+  .slider-nav {
+    width: 70%;
+    margin: 0 auto;
+    .slick-slide {
+      height: 400px;
+      padding: 40px;
+    }
+    .slick-list {
+      overflow: visible;
+    }
+  }
+  .slider-for {
+    width: 40%;
+    img {
+      height: $calendarHeight;
+    }
+  }
 }
