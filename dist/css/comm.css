@@ -307,7 +307,7 @@ legend {
 
 .sec-calendar {
   display: flex;
-  height: 500px;
+  height: 900px;
 }
 .sec-calendar img {
   display: block;
@@ -340,7 +340,7 @@ legend {
   width: 40%;
 }
 .sec-calendar .slider-for img {
-  height: 500px;
+  height: 900px;
 }
 
 .fclear:after {
@@ -431,7 +431,6 @@ legend {
   padding-bottom: 30px;
 }
 
-/* ì˜¤ë¥¸ìª½ ë¦¬ìŠ¤íŠ¸ */
 .mag-cont #MAGAZINE_CATEGORY_LIST .category_list_area {
   width: 100%;
   height: 100%;
@@ -1032,6 +1031,7 @@ legend {
 
 .mag-cont #MAGAZINE_CATEGORY_LIST .category_area .category_main {
   height: 100%;
+  margin-top: 100px;
 }
 
 #MAGAZINE_CATEGORY_LIST .category_list_area .category_list_inner {
@@ -1206,12 +1206,348 @@ legend {
     top: -35px;
   }
 }
+.page-num {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.paging {
+  clear: both;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.paging a,
+.paging strong {
+  display: inline-block;
+  margin-right: 1px;
+  vertical-align: middle;
+}
+
+.paging a {
+  padding: 15px;
+}
+
+.paging strong {
+  width: 40px;
+  height: 40px;
+  background: #002650;
+  border: 1px solid #ccc;
+  font-weight: normal;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.top-img img {
+  width: 100%;
+  height: 392px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* contents */
+/* tab */
+.tabs-wrap {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: -95px;
+}
+
+.tabs-wrap .tab1 .tit {
+  border-radius: 20px 0 0 0;
+}
+
+.tabs-wrap .tab2 .tit {
+  border-radius: 0px 20px 0 0;
+}
+
+.tabs-wrap .tab-item {
+  width: 40%;
+}
+
+/* 비활성화 tab */
+.tabs-wrap .tab-item .tit {
+  height: 90px;
+  padding-top: 35px;
+  border-bottom: 1px solid #333;
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* 활성화 tab */
+.tabs-wrap .on .tit {
+  background: rgba(19, 41, 75, 0.8);
+  color: #fff;
+}
+
+.tabs-wrap .tab-item .cont {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  height: 130px;
+}
+
+.tabs-wrap .on .cont {
+  display: block;
+}
+
+.lst-bbs {
+  padding-top: 0px;
+}
+
+.lst-bbs > li {
+  display: flex;
+  align-items: center;
+}
+
+.lst-bbs li a {
+  display: block;
+  line-height: 2;
+}
+
+.lst-bbs li a:hover {
+  text-decoration: underline;
+}
+
+/* 갤러리 */
+.lst-gallery {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+
+.lst-gallery li {
+  width: 100px;
+}
+
+.lst-gallery li p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.category_list_inner {
+  width: 80%;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.category_list_inner .new_grid_container {
+  text-align: center;
+}
+
+.sub_title {
+  position: absolute;
+  top: 0;
+  left: 44.5%;
+  margin-top: -200px;
+}
+.sub_title h2 {
+  font-family: "Gotham", sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.sub_title p {
+  color: #cccccc;
+  font-size: 0.8rem;
+}
+
+.list-boonyang {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+  flex-wrap: wrap;
+}
+.list-boonyang li {
+  width: 30%;
+  margin: 0 12px 35px;
+}
+.list-boonyang img {
+  display: block;
+  width: 100%;
+}
+.list-boonyang .gu_img_area {
+  overflow: hidden;
+  position: relative;
+}
+.list-boonyang .gu_img_area .label-g {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  padding: 15px 15px;
+  line-height: 1.2;
+  word-break: break-word;
+}
+.list-boonyang .gu_img_area .label-ing {
+  background: #f26522;
+  line-height: 40px;
+  padding: 15px 10px;
+}
+.list-boonyang .gu_img_area .label-expect {
+  background: #232e64;
+}
+.list-boonyang .gu_img_area:hover .hover_box {
+  top: 70%;
+}
+.list-boonyang .hover_box {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #002650;
+  padding: 33px 40px 40px 40px;
+  border-radius: 20px;
+  transition: all 0.3s;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+}
+.list-boonyang .hover_box .link-g {
+  width: 48%;
+  height: 37px;
+  text-align: center;
+  line-height: 37px;
+}
+.list-boonyang .hover_box .c-line {
+  border: 1px solid #ff7a00;
+  color: #ff7a00;
+}
+.list-boonyang .hover_box .g-line {
+  border: 1px solid #bbb6b6;
+  color: #bbb6b6;
+}
+
+.txt {
+  margin-top: 20px;
+  text-align: left;
+}
+.txt .upper {
+  font-size: 1.1rem;
+  position: relative;
+  padding: 25px 0;
+  letter-spacing: -1.5px;
+  color: #333333;
+}
+.txt .upper:after {
+  content: "";
+  position: absolute;
+  width: 43px;
+  height: 1px;
+  background: #000;
+  left: 0;
+  bottom: 0;
+}
+.txt .desc {
+  position: relative;
+  margin: 0;
+  margin-top: 20px;
+}
+.txt .desc p {
+  margin: 0;
+  font-size: 0.7rem;
+  color: #656565;
+  margin-bottom: 5px;
+}
+.txt .desc p span {
+  width: 75px;
+  float: none;
+  display: inline-block;
+}
+
+.lst-gallery .year {
+  text-align: center;
+  position: relative;
+  margin-top: 70px;
+}
+.lst-gallery .year strong {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px 30px;
+  font-size: 70px;
+  font-weight: 700;
+  color: #0b0544;
+}
+
+.calendar_body {
+  padding-top: 37px;
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+}
+.calendar_body .calendar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: #ddd solid 1px;
+  border-right: #ddd solid 1px;
+}
+.calendar_body .calendar li {
+  margin: 0;
+  box-sizing: border-box;
+  border-top: #ddd solid 1px;
+  border-left: #ddd solid 1px;
+  width: 399px;
+  min-height: 300px;
+  padding: 18px 31px;
+}
+.calendar_body .calendar li strong {
+  font-size: 50px;
+  font-weight: 700;
+}
+.calendar_body .calendar li .c1 {
+  text-align: left;
+}
+.calendar_body .calendar li .c1 em {
+  color: #c8baa7;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.calendar_body .calendar li .c2 {
+  margin-top: 50px;
+}
+.calendar_body .calendar li .c2 i {
+  background-color: #054438;
+  display: inline-block;
+  box-sizing: border-box;
+  min-width: 72px;
+  height: 32px;
+  border-radius: 32px;
+  text-align: center;
+  line-height: 32px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
 .contents {
   height: 3000px;
 }
 
 #header {
-  height: 133px;
+  height: 100px;
   background: #fff;
 }
 

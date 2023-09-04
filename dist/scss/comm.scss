@@ -1,5 +1,6 @@
 @charset "UFT-8";
-@import "mixin", "variables", "fonts", "reset", "main", "news", "contents";
+@import "mixin", "variables", "fonts", "reset", "main", "news", "boonyang",
+  "contents";
 
 // comm.scss -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
@@ -11,7 +12,7 @@
 
 // header
 #header {
-  height: 133px;
+  height: 100px;
   background: #fff;
 }
 .inner {
