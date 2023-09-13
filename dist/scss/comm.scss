@@ -1,6 +1,6 @@
 @charset "UFT-8";
 @import "mixin", "variables", "fonts", "reset", "main", "news", "boonyang",
-  "contents";
+  "brandstory", "contents";
 
 // comm.scss -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
@@ -56,12 +56,11 @@
 .brand {
   margin: 0 !important;
   padding: 0 !important;
-}
-
-img {
-  width: 300px;
-  height: 320px;
-  object-fit: cover;
+  img {
+    width: 300px;
+    height: 320px;
+    object-fit: cover;
+  }
 }
 
 * {
@@ -349,20 +348,19 @@ img {
     }
   }
 }
-.four-sec {
-  // margin: 0 !important;
-  // padding: 0 !important;
-}
 
 .img-box {
   margin: 0 auto;
-  // padding-top: 150px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  width: 80%;
+
   .four-active {
     display: flex;
     justify-content: space-between;
     li {
       width: 23%;
-      height: 50vh;
+      height: 35vh;
       // background: red;
       a {
         position: relative;
