@@ -4,20 +4,13 @@
   object-fit: cover;
 }
 
-/* contents */
-// .boon-contents {
-//   display: flex;
-//   justify-content: center;
-//   padding: 10px 0;
-//   margin: -105px auto;
-// }
-/* tab */
 .tabs-wrap {
   position: relative;
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: -95px;
+  margin: -95px auto 0;
+  max-width: 1280px;
 }
 .tabs-wrap .tab1 .tit {
   border-radius: 20px 0 0 0;
@@ -26,7 +19,7 @@
   border-radius: 0px 20px 0 0;
 }
 .tabs-wrap .tab-item {
-  width: 40%;
+  width: 50%;
 }
 
 /* 비활성화 tab */
@@ -45,7 +38,7 @@
 /* 활성화 tab */
 .tabs-wrap .on .tit {
   background: rgba(19, 41, 75, 0.8);
-  color: #fff;
+  color: $w;
 }
 .tabs-wrap .tab-item .cont {
   display: none;
@@ -58,6 +51,12 @@
 .tabs-wrap .on .cont {
   display: block;
 }
+@media screen and (max-width: 1280px) {
+  .tabs-wrap {
+    padding: 0 20px;
+  }
+}
+// vi
 .lst-bbs {
   padding-top: 0px;
 }
@@ -70,34 +69,25 @@
   display: block;
   line-height: 2;
 }
-.lst-bbs li a:hover {
-  text-decoration: underline;
-}
 
 /* 갤러리 */
 .lst-gallery {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 5px;
-}
-.lst-gallery li {
-  width: 100px;
-}
-.lst-gallery li p {
-  text-align: left;
-  margin-bottom: 5px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  li {
+    width: 100px;
+  }
+  p {
+    text-align: left;
+    margin-bottom: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 }
 
 // 분양단지 리스트
 
 .category_list_inner {
-  width: 80%;
   overflow: hidden;
-  box-sizing: border-box;
-  margin: 0 auto;
   box-sizing: border-box;
   .new_grid_container {
     text-align: center;
@@ -106,8 +96,8 @@
 .sub_title {
   position: absolute;
   top: 0;
-  left: 44.5%;
-
+  left: 50%;
+  transform: translateX(-50%);
   margin-top: -200px;
 
   h2 {
@@ -116,7 +106,7 @@
     font-size: 2.4rem;
     letter-spacing: -1px;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: $w;
   }
   p {
     color: #cccccc;
@@ -126,15 +116,17 @@
 .list-boonyang {
   display: flex;
   justify-content: space-between;
-  margin-top: 200px;
+  margin-top: 160px;
   flex-wrap: wrap;
   li {
-    width: 30%;
-    margin: 0 12px 35px;
+    width: 32%;
+    margin: 0 0 35px;
   }
   img {
     display: block;
     width: 100%;
+    height: 300px;
+    object-fit: cover;
   }
   .gu_img_area {
     overflow: hidden;
@@ -143,17 +135,17 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 70px;
-      height: 70px;
+      width: 4.375rem;
+      height: 4.375rem;
       text-align: center;
-      color: #ffffff;
+      color: $w;
       font-weight: 300;
       padding: 15px 15px;
       line-height: 1.2;
       word-break: break-word;
     }
     .label-ing {
-      background: #f26522;
+      background: $prim1;
       line-height: 40px;
       padding: 15px 10px;
     }
@@ -184,25 +176,42 @@
       height: 37px;
       text-align: center;
       line-height: 37px;
+      &:hover {
+        border: 1px solid $prim1;
+        background: $prim1;
+        color: $w;
+      }
     }
     .c-line {
-      border: 1px solid #ff7a00;
-
-      color: #ff7a00;
+      border: 1px solid $prim1;
+      color: $prim1;
     }
     .g-line {
-      border: 1px solid #bbb6b6;
-
-      color: #bbb6b6;
+      border: 1px solid;
+      color: $gray-b;
     }
   }
 }
+@media screen and (max-width: 1024px) {
+  .list-boonyang li {
+    width: 49%;
+  }
+  .list-boonyang > li:last-child {
+    display: none;
+  }
+}
+@media screen and (max-width: 744px) {
+  .list-boonyang li {
+    width: 100%;
+  }
+}
+
 .txt {
   margin-top: 20px;
   text-align: left;
 
   .upper {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     position: relative;
     padding: 25px 0;
     letter-spacing: -1.5px;
@@ -210,11 +219,11 @@
     &:after {
       content: "";
       position: absolute;
-      width: 43px;
+      width: 50px;
       height: 1px;
       background: #000;
       left: 0;
-      bottom: 0;
+      bottom: 8px;
     }
   }
   .desc {
@@ -223,13 +232,13 @@
     margin-top: 20px;
     p {
       margin: 0;
-      font-size: 0.7rem;
+      font-size: 0.875rem;
       color: #656565;
-      margin-bottom: 5px;
       span {
+        display: inline-block;
         width: 75px;
         float: none;
-        display: inline-block;
+        color: #000;
       }
     }
   }
@@ -249,7 +258,7 @@
 }
 .calendar_body {
   padding-top: 37px;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto 0 auto;
   .calendar {
     display: flex;
@@ -286,7 +295,7 @@
       .c2 {
         margin-top: 50px;
         i {
-          background-color: #f26522;
+          background-color: $prim1;
           display: inline-block;
           box-sizing: border-box;
           min-width: 72px;
@@ -294,7 +303,7 @@
           border-radius: 32px;
           text-align: center;
           line-height: 32px;
-          color: #fff;
+          color: $w;
           font-size: 14px;
           font-weight: 500;
         }
