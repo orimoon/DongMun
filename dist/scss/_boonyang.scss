@@ -294,7 +294,7 @@
       }
       .c2 {
         margin-top: 50px;
-        i {
+        .type1 {
           background-color: $prim1;
           display: inline-block;
           box-sizing: border-box;
@@ -307,7 +307,7 @@
           font-size: 14px;
           font-weight: 500;
         }
-        i2 {
+        .type2 {
           background-color: #232e64;
           display: inline-block;
           box-sizing: border-box;
@@ -322,5 +322,20 @@
         }
       }
     }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .calendar_body .calendar li {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .calendar_body .calendar {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 744px) {
+  .calendar_body .calendar li {
+    width: 100%;
   }
 }

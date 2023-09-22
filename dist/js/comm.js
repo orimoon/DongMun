@@ -178,7 +178,7 @@ $(".slider-nav").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   asNavFor: ".slider-for",
-  dots: true,
+  dots: false,
   centerMode: true,
   centerPadding: "20px",
   focusOnSelect: true,
