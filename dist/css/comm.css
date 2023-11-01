@@ -403,6 +403,14 @@ legend {
 .sec-calendar .slider-for {
   width: 40%;
 }
+@media screen and (max-width: 744px) {
+  .sec-calendar .slider-nav {
+    width: 100%;
+  }
+  .slick-slide {
+    padding: 20px;
+  }
+}
 @media screen and (max-width: 1440px) {
   .sec-calendar .slider-nav li .text .desc dl {
     display: block;
@@ -560,13 +568,12 @@ legend {
 }
 
 #MAGAZINE_CATEGORY_LIST .category_area.elFix {
-  position: fixed;
+  position: sticky;
   z-index: 3;
 }
 
 .mag-cont #MAGAZINE_CATEGORY_LIST .category_area .category_main {
   height: 100%;
-  margin-top: 100px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -732,7 +739,6 @@ legend {
 
 .tabs-wrap {
   position: relative;
-  display: flex;
   width: 100%;
   justify-content: center;
   margin: -95px auto 0;
@@ -747,12 +753,11 @@ legend {
   border-radius: 0px 20px 0 0;
 }
 
-.tabs-wrap .tab-item {
-  width: 50%;
-}
-
 /* 비활성화 tab */
 .tabs-wrap .tab-item .tit {
+  position: absolute;
+  top: 0;
+  width: 50%;
   height: 90px;
   padding-top: 35px;
   border-bottom: 1px solid #333;
@@ -763,6 +768,14 @@ legend {
   cursor: pointer;
 }
 
+.tabs-wrap .tab-item:first-child .tit {
+  left: 0;
+}
+
+.tabs-wrap .tab-item:last-child .tit {
+  right: 0;
+}
+
 /* 활성화 tab */
 .tabs-wrap .on .tit {
   background: rgba(19, 41, 75, 0.8);
@@ -771,11 +784,8 @@ legend {
 
 .tabs-wrap .tab-item .cont {
   display: none;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  right: 0;
-  height: 130px;
+  width: 100%;
+  padding-bottom: 100px;
 }
 
 .tabs-wrap .on .cont {
@@ -784,7 +794,8 @@ legend {
 
 @media screen and (max-width: 1280px) {
   .tabs-wrap {
-    padding: 0 20px;
+    width: calc(100% - 40px);
+    padding: 0;
   }
 }
 .lst-bbs {
@@ -973,7 +984,7 @@ legend {
 .lst-gallery .year {
   text-align: center;
   position: relative;
-  margin-top: 70px;
+  margin-top: 120px;
 }
 .lst-gallery .year strong {
   display: inline-block;
@@ -1857,11 +1868,20 @@ legend {
   }
   main .sub-container .brand .right ul li div a .area-txt span:nth-child(2) {
     opacity: 1;
+    font-size: 14px;
     transition: all 2s ease;
   }
   main .sub-container .brand .right ul li div a .area-bg img {
     opacity: 1;
   }
+}
+@media screen and (max-width: 1024px) and (max-width: 744px) {
+  main .sub-container .brand .right ul li div a .area-txt span:nth-child(2) {
+    opacity: 0;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
   .sub-container .brand .desc {
     position: static;
     transform: none;
@@ -1925,6 +1945,19 @@ legend {
 }
 
 @media screen and (max-width: 744px) {
+  .sub-container .brand .desc h2 {
+    font-size: 80px;
+  }
+  main .sub-container .brand .right {
+    margin-top: 75px;
+  }
+}
+@media screen and (max-width: 428px) {
+  main .sub-container .brand .right {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 744px) {
   .sec-goto .img-box {
     padding: 150px 30px 150px;
     width: 100%;
@@ -1938,6 +1971,28 @@ legend {
     padding: 5px 0 5px;
   }
   .sec-goto .img-box .four-active li a span {
-    bottom: 47px;
+    bottom: 30%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .sub-container .brand .right li div a .area-txt {
+    justify-content: normal;
+  }
+  .sub-container .brand .right li div a .area-txt span {
+    font-size: 16px;
+    padding-top: 85px;
+  }
+  .sub-container .brand .desc h2 {
+    font-size: 65px;
+  }
+  .sub-container .brand .desc h3 {
+    font-size: 14px;
+    padding: 20px;
+  }
+  main .sub-container .brand {
+    height: 680px;
+  }
+  main .sub-container .brand .right ul li div a .area-txt span:nth-child(2) {
+    display: none;
   }
 }/*# sourceMappingURL=comm.css.map */

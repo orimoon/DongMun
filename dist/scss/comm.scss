@@ -197,6 +197,7 @@
                 transition: all 0.5s ease;
               }
             }
+
             .area-bg {
               img {
                 position: absolute;
@@ -351,7 +352,7 @@
                 .area-txt {
                   span:nth-child(2) {
                     opacity: 1;
-
+                    font-size: 14px;
                     transition: all 2s ease;
                   }
                 }
@@ -365,6 +366,13 @@
       }
     }
   }
+  @media screen and (max-width: 744px) {
+    main .sub-container .brand .right ul li div a .area-txt span:nth-child(2) {
+      opacity: 0;
+      font-size: 12px;
+    }
+  }
+
   .sub-container .brand .desc {
     position: static;
     transform: none;
@@ -428,6 +436,19 @@
   }
 }
 @media screen and (max-width: 744px) {
+  .sub-container .brand .desc h2 {
+    font-size: 80px;
+  }
+  main .sub-container .brand .right {
+    margin-top: 75px;
+  }
+}
+@media screen and (max-width: 428px) {
+  main .sub-container .brand .right {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 744px) {
   .sec-goto .img-box {
     padding: 150px 30px 150px;
     width: 100%;
@@ -440,9 +461,34 @@
         height: 15vh;
         padding: 5px 0 5px;
         a span {
-          bottom: 47px;
+          bottom: 30%;
         }
       }
+    }
+  }
+}
+@media screen and (max-width: 428px) {
+  .sub-container .brand .right li div a .area-txt {
+    justify-content: normal;
+
+    span {
+      font-size: 16px;
+      padding-top: 85px;
+    }
+  }
+  .sub-container .brand .desc {
+    h2 {
+      font-size: 65px;
+    }
+    h3 {
+      font-size: 14px;
+      padding: 20px;
+    }
+  }
+  main .sub-container .brand {
+    height: 680px;
+    .right ul li div a .area-txt span:nth-child(2) {
+      display: none;
     }
   }
 }

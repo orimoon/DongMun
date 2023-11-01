@@ -6,7 +6,7 @@
 
 .tabs-wrap {
   position: relative;
-  display: flex;
+  // display: flex;
   width: 100%;
   justify-content: center;
   margin: -95px auto 0;
@@ -18,12 +18,17 @@
 .tabs-wrap .tab2 .tit {
   border-radius: 0px 20px 0 0;
 }
-.tabs-wrap .tab-item {
-  width: 50%;
-}
+// .tabs-wrap .tab-item {
+//   width: 50%;
+// }
 
 /* 비활성화 tab */
+.tabs-wrap .tab-item {
+}
 .tabs-wrap .tab-item .tit {
+  position: absolute;
+  top: 0;
+  width: 50%;
   height: 90px;
   padding-top: 35px;
   border-bottom: 1px solid #333;
@@ -35,6 +40,12 @@
   box-sizing: border-box;
   cursor: pointer;
 }
+.tabs-wrap .tab-item:first-child .tit {
+  left: 0;
+}
+.tabs-wrap .tab-item:last-child .tit {
+  right: 0;
+}
 /* 활성화 tab */
 .tabs-wrap .on .tit {
   background: rgba(19, 41, 75, 0.8);
@@ -42,18 +53,21 @@
 }
 .tabs-wrap .tab-item .cont {
   display: none;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  right: 0;
-  height: 130px;
+  width: 100%;
+  padding-bottom: 100px;
+  // position: absolute;
+  // top: 50px;
+  // left: 0;
+  // right: 0;
+  // height: 130px;
 }
 .tabs-wrap .on .cont {
   display: block;
 }
 @media screen and (max-width: 1280px) {
   .tabs-wrap {
-    padding: 0 20px;
+    width: calc(100% - 40px);
+    padding: 0;
   }
 }
 // vi
@@ -246,7 +260,7 @@
 .lst-gallery .year {
   text-align: center;
   position: relative;
-  margin-top: 70px;
+  margin-top: 120px;
   strong {
     display: inline-block;
     vertical-align: middle;

@@ -133,7 +133,14 @@
     }
   }
 }
-
+@media screen and (max-width: 744px) {
+  .sec-calendar .slider-nav {
+    width: 100%;
+  }
+  .slick-slide {
+    padding: 20px;
+  }
+}
 @media screen and (max-width: 1440px) {
   .sec-calendar .slider-nav li .text .desc dl {
     display: block;
